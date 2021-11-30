@@ -28,7 +28,7 @@ class _About_screenState extends State<About_screen> {
                       child: Center(
                         child: Text("Telegram ma`lumotlari dasturi haqida",
                           style: TextStyle(
-                            fontSize: 23,
+                            fontSize: 28,
                             //fontWeight:FontWeight.bold,
                             fontFamily: "Billabong",
                             color: Colors.black,
@@ -38,24 +38,25 @@ class _About_screenState extends State<About_screen> {
                       padding: EdgeInsets.only(top: 15,),
                     ),
                     Container(
-                      height: 200,
+                      height: 160,
                       width: double.infinity,
                       color: Colors.black12,
                       child: Column(
                         children: [
-                          Container(
-                            child: Image.asset("assets/t7.png"),
-                            margin: EdgeInsets.all(5),
-                            height: 150,
-                            width: 150,
+                          Center(
+                            child: Container(
+                              child: Center(child: Image.asset("assets/t7.png")),
+                             // margin: EdgeInsets.all(5),
+                              height: 150,
+                              width: 150,
+                            ),
                           ),
                         ],
                       ),
-
                     ),
                     Container(
                       padding: EdgeInsets.only(left: 3,right: 3,),
-                      height: 220,
+                      height: 210,
                       width: double.infinity,
                       color: Colors.black12,
                       child: Text(
@@ -77,10 +78,12 @@ class _About_screenState extends State<About_screen> {
                         // color: Colors.black12,
                         decoration: BoxDecoration(
                             color: Colors.black12,
-                            borderRadius: BorderRadius.circular(10.0),
+
                         ),
                         child: FlatButton(
-
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(22.5),
+                          ),
                             onPressed: (){
                               showDialog(
                                 context: context,
@@ -89,7 +92,8 @@ class _About_screenState extends State<About_screen> {
                                   title: new Text("Ma`lumot"),
                                   content:  new Text("Telegram orqali bog`lanish hozircha mavjud emas!!!",style: TextStyle(fontSize: 12,color: Colors.black),),
                                   actions: <Widget>[
-                                    new FlatButton(onPressed: (){
+                                    new FlatButton(
+                                      onPressed: (){
                                       Navigator.of(context).pop();
                                     },
                                       child: new Text("ok"),),
@@ -98,8 +102,8 @@ class _About_screenState extends State<About_screen> {
                                 }
                               );
                             },
-                            child: Text("Bog`lanish",style: TextStyle(fontSize:14,color: Colors.red),),
-                           color: Colors.teal,
+                            child: Text("Bog`lanish",style: TextStyle(fontSize:19,color: Colors.red),),
+                           color: Colors.green[700],
                         ),
                       ),
                     Container(
