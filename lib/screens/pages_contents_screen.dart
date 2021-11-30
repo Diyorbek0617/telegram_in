@@ -1,5 +1,6 @@
 import 'package:telegram_in/pages/telegram_asoschisi.dart';
 import 'package:flutter/material.dart';
+import 'package:telegram_in/pages/telegram_turlari.dart';
 import 'package:telegram_in/screens/home_screen.dart';
 import 'package:telegram_in/pages/telegram_tarixi.dart';
 
@@ -49,7 +50,7 @@ class _Pages_contents_screenState extends State<Pages_contents_screen> {
                  trailing: Icon(Icons.arrow_forward_ios),
                   leading:
                   CircleAvatar(
-                    backgroundImage: AssetImage('assets/logobeta.jpg'),
+                    backgroundImage: AssetImage('assets/t_h2.jpg'),
                     radius: 19,
 
                   ),
@@ -88,10 +89,16 @@ class _Pages_contents_screenState extends State<Pages_contents_screen> {
                 margin: EdgeInsets.only(top:5, left: 9,right: 9,bottom: 5),
                 child: ListTile(
                   trailing: Icon(Icons.arrow_forward_ios),
-                  leading: Icon(Icons.import_contacts),
-                  title: Text('Telegram tarixi',style:TextStyle(color: Colors.black,fontWeight: FontWeight.bold,
+                  leading: CircleAvatar(
+                    backgroundImage: AssetImage('assets/t_d5.png'),
+                    radius: 19,
+                  ),
+                  title: Text('Telegram turlari',style:TextStyle(color: Colors.black,fontWeight: FontWeight.bold,
                       fontSize: 15),
                   ),
+                  onTap: (){
+                    Navigator.pushNamed(context, Telegram_turlari.id);
+                  },
                 ),
 
                 elevation: 0,
@@ -101,8 +108,11 @@ class _Pages_contents_screenState extends State<Pages_contents_screen> {
                 margin: EdgeInsets.only(top:5, left: 9,right: 9,bottom: 5),
                 child: ListTile(
                   trailing: Icon(Icons.arrow_forward_ios),
-                  leading: Icon(Icons.import_contacts),
-                  title: Text('Telegram tarixi',style:TextStyle(color: Colors.black,fontWeight: FontWeight.bold,
+                  leading: CircleAvatar(
+                    backgroundImage: AssetImage('assets/t_up2.png'),
+                    radius: 19,
+                  ),
+                  title: Text('Telegram versiyalari',style:TextStyle(color: Colors.black,fontWeight: FontWeight.bold,
                       fontSize: 15),
                   ),
                 ),
@@ -113,8 +123,11 @@ class _Pages_contents_screenState extends State<Pages_contents_screen> {
                 margin: EdgeInsets.only(top:5, left: 9,right: 9,bottom: 5),
                 child: ListTile(
                   trailing: Icon(Icons.arrow_forward_ios),
-                  leading: Icon(Icons.import_contacts),
-                  title: Text('Telegram tarixi',style:TextStyle(color: Colors.black,fontWeight: FontWeight.bold,
+                  leading: CircleAvatar(
+                    backgroundImage: AssetImage('assets/t_alter3.png'),
+                    radius: 19,
+                  ),
+                  title: Text('Telegram alternatives',style:TextStyle(color: Colors.black,fontWeight: FontWeight.bold,
                       fontSize: 15),
                   ),
                 ),
@@ -126,8 +139,11 @@ class _Pages_contents_screenState extends State<Pages_contents_screen> {
                 margin: EdgeInsets.only(top:5, left: 9,right: 9,bottom: 5),
                 child: ListTile(
                   trailing: Icon(Icons.arrow_forward_ios),
-                  leading: Icon(Icons.import_contacts),
-                  title: Text('Telegram tarixi',style:TextStyle(color: Colors.black,fontWeight: FontWeight.bold,
+                  leading: CircleAvatar(
+                    backgroundImage: AssetImage('assets/channel3.jpg'),
+                    radius: 19,
+                  ),
+                  title: Text('Telegram kanal',style:TextStyle(color: Colors.black,fontWeight: FontWeight.bold,
                       fontSize: 15),
                   ),
                 ),
@@ -138,8 +154,11 @@ class _Pages_contents_screenState extends State<Pages_contents_screen> {
                 margin: EdgeInsets.only(top:5, left: 9,right: 9,bottom: 5),
                 child: ListTile(
                   trailing: Icon(Icons.arrow_forward_ios),
-                  leading: Icon(Icons.import_contacts),
-                  title: Text('Telegram tarixi',style:TextStyle(color: Colors.black,fontWeight: FontWeight.bold,
+                  leading: CircleAvatar(
+                    backgroundImage: AssetImage('assets/t_ch2.png'),
+                    radius: 19,
+                  ),
+                  title: Text('Aktiv kanallar',style:TextStyle(color: Colors.black,fontWeight: FontWeight.bold,
                       fontSize: 15),
                   ),
                 ),
@@ -150,8 +169,11 @@ class _Pages_contents_screenState extends State<Pages_contents_screen> {
                 margin: EdgeInsets.only(top:5, left: 9,right: 9,bottom: 5),
                 child: ListTile(
                   trailing: Icon(Icons.arrow_forward_ios),
-                  leading: Icon(Icons.import_contacts),
-                  title: Text('Telegram tarixi',style:TextStyle(color: Colors.black,fontWeight: FontWeight.bold,
+                  leading: CircleAvatar(
+                    backgroundImage: AssetImage('assets/t_bot2.jpeg'),
+                    radius: 19,
+                  ),
+                  title: Text('Telegram bot',style:TextStyle(color: Colors.black,fontWeight: FontWeight.bold,
                       fontSize: 15),
                   ),
                 ),
@@ -162,8 +184,11 @@ class _Pages_contents_screenState extends State<Pages_contents_screen> {
                 margin: EdgeInsets.only(top:5, left: 9,right: 9,bottom: 5),
                 child: ListTile(
                   trailing: Icon(Icons.arrow_forward_ios),
-                  leading: Icon(Icons.import_contacts),
-                  title: Text('Telegram tarixi',style:TextStyle(color: Colors.black,fontWeight: FontWeight.bold,
+                  leading: CircleAvatar(
+                    backgroundImage: AssetImage('assets/superbot.jpg'),
+                    radius: 19,
+                  ),
+                  title: Text('Mukammal bot yaratish',style:TextStyle(color: Colors.black,fontWeight: FontWeight.bold,
                       fontSize: 15),
                   ),
                 ),
@@ -174,8 +199,10 @@ class _Pages_contents_screenState extends State<Pages_contents_screen> {
                 margin: EdgeInsets.only(top:5, left: 9,right: 9,bottom: 5),
                 child: ListTile(
                   trailing: Icon(Icons.arrow_forward_ios),
-                  leading: Icon(Icons.import_contacts),
-                  title: Text('Telegram tarixi',style:TextStyle(color: Colors.black,fontWeight: FontWeight.bold,
+                  leading: CircleAvatar(
+                    backgroundImage: AssetImage('assets/t_money2.jpg'),
+                    radius: 19,),
+                  title: Text('Telegram orqali pul ishlash',style:TextStyle(color: Colors.black,fontWeight: FontWeight.bold,
                       fontSize: 15),
                   ),
                 ),

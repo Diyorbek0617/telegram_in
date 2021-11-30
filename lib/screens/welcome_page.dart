@@ -57,10 +57,12 @@ class _Welcome_pageState extends State<Welcome_page> with SingleTickerProviderSt
                       hoverColor: Colors.black,
                       hoverRadius: 90,
                     ),
-                    Center(
-                         child: Text("Telegram ma`lumotlari",
-                           style: TextStyle(fontSize: 20,color: Colors.black54,fontFamily: "Billabong",),),
-                    ),
+
+                    //    Center(   child: Text("Telegram ma`lumotlari",
+                    //      style: TextStyle(fontSize: 20,color: Colors.black54,fontFamily: "Billabong",),
+                    //    ),
+                    //
+                    // ),
                   ],
                 ),
                 //child: Image.asset('assets/Telegram.png'),

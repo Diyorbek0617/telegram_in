@@ -24,19 +24,23 @@ class _About_screenState extends State<About_screen> {
         child: ListView(
                   children: [
                     Container(
+                      color: Colors.black12,
+                      child: Text("Telegram ma`lumotlari dasturi haqida",
+                        style: TextStyle(
+                          fontSize: 23,
+                          //fontWeight:FontWeight.bold,
+                          fontFamily: "Billabong",
+                          color: Colors.black,
+                        ),
+                      ),
+                      padding: EdgeInsets.only(top: 15,),
+                    ),
+                    Container(
                       height: 200,
                       width: double.infinity,
                       color: Colors.black12,
                       child: Column(
                         children: [
-                          Text("Telegram ma`lumotlari dasturi haqida",
-                            style: TextStyle(
-                              fontSize: 23,
-                              //fontWeight:FontWeight.bold,
-                              fontFamily: "Billabong",
-                              color: Colors.black,
-                            ),
-                          ),
                           Container(
                             child: Image.asset("assets/t7.png"),
                             margin: EdgeInsets.all(5),
@@ -62,33 +66,39 @@ class _About_screenState extends State<About_screen> {
                         textAlign: TextAlign.justify,
                       ),
                     ),
-                    Container(
-                      margin: EdgeInsets.only(top: 10,bottom: 10,right: 30,left: 30),
-                      height: 20,
-                      width: double.infinity,
-                      color: Colors.black12,
-                      child: FlatButton(
-                        onPressed: (){
-                          showDialog(
-                            context: context,
-                            builder: (BuildContext context){
-                            return AlertDialog(
-                              title: new Text("Ma`lumot"),
-                              content:  new Text("Telegram orqali bog`lanish hozircha mavjud emas!!!",style: TextStyle(fontSize: 12,color: Colors.black),),
-                              actions: <Widget>[
-                                new FlatButton(onPressed: (){
-                                  Navigator.of(context).pop();
-                                },
-                                  child: new Text("ok"),),
-                              ],
-                            ) ;
-                            }
-                          );
-                        },
-                        child: Text("Bog`lanish",style: TextStyle(fontSize:14,color: Colors.red),),
-                        color: Colors.teal,
+
+                           Container(
+                             padding: EdgeInsets.only(right: 50,left: 50),
+                             height: 50,
+                             width: double.infinity,
+                        // color: Colors.black12,
+                        decoration: BoxDecoration(
+                            color: Colors.black12,
+                            borderRadius: BorderRadius.circular(10.0),
+                        ),
+                        child: FlatButton(
+
+                            onPressed: (){
+                              showDialog(
+                                context: context,
+                                builder: (BuildContext context){
+                                return AlertDialog(
+                                  title: new Text("Ma`lumot"),
+                                  content:  new Text("Telegram orqali bog`lanish hozircha mavjud emas!!!",style: TextStyle(fontSize: 12,color: Colors.black),),
+                                  actions: <Widget>[
+                                    new FlatButton(onPressed: (){
+                                      Navigator.of(context).pop();
+                                    },
+                                      child: new Text("ok"),),
+                                  ],
+                                ) ;
+                                }
+                              );
+                            },
+                            child: Text("Bog`lanish",style: TextStyle(fontSize:14,color: Colors.red),),
+                           color: Colors.teal,
+                        ),
                       ),
-                    ),
                     Container(
                       height: 60,
                       width: double.infinity,
