@@ -25,12 +25,14 @@ class _About_screenState extends State<About_screen> {
                   children: [
                     Container(
                       color: Colors.black12,
-                      child: Text("Telegram ma`lumotlari dasturi haqida",
-                        style: TextStyle(
-                          fontSize: 23,
-                          //fontWeight:FontWeight.bold,
-                          fontFamily: "Billabong",
-                          color: Colors.black,
+                      child: Center(
+                        child: Text("Telegram ma`lumotlari dasturi haqida",
+                          style: TextStyle(
+                            fontSize: 23,
+                            //fontWeight:FontWeight.bold,
+                            fontFamily: "Billabong",
+                            color: Colors.black,
+                          ),
                         ),
                       ),
                       padding: EdgeInsets.only(top: 15,),
@@ -52,6 +54,7 @@ class _About_screenState extends State<About_screen> {
 
                     ),
                     Container(
+                      padding: EdgeInsets.only(left: 3,right: 3,),
                       height: 220,
                       width: double.infinity,
                       color: Colors.black12,
@@ -100,6 +103,7 @@ class _About_screenState extends State<About_screen> {
                         ),
                       ),
                     Container(
+                      padding: EdgeInsets.only(top: 8,left: 3,right: 3,),
                       height: 60,
                       width: double.infinity,
                       color: Colors.black12,
