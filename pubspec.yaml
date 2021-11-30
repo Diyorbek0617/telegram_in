@@ -20,6 +20,7 @@ dependencies:
   animated_text_kit:
   page_transition:
   particles_flutter:
+  fab_circular_menu:
 
 dev_dependencies:
   flutter_test:

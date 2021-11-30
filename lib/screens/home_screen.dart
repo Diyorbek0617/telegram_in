@@ -3,7 +3,6 @@ import 'package:telegram_in/screens/about_screen.dart';
 import 'package:telegram_in/screens/pages_contents_screen.dart';
 import 'package:telegram_in/screens/welcome_page.dart';
 import 'package:flutter/material.dart';
-import 'package:fancy_bottom_navigation/fancy_bottom_navigation.dart';
 
 class Home_screen extends StatefulWidget {
   const Home_screen({Key? key}) : super(key: key);
