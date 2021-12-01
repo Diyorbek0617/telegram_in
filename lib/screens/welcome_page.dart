@@ -108,7 +108,7 @@ class _Welcome_pageState extends State<Welcome_page> with SingleTickerProviderSt
     ringColor: Colors.blue.withAlpha(40),
     ringDiameter: 500.0,
     ringWidth: 150.0,
-    fabSize: 64.0,
+    fabSize: 55.0,
     fabElevation: 8.0,
     fabIconBorder: CircleBorder(),
     // Also can use specific color based on wether
@@ -133,7 +133,7 @@ class _Welcome_pageState extends State<Welcome_page> with SingleTickerProviderSt
 
     shape: CircleBorder(),
     padding: const EdgeInsets.all(24.0),
-  child: Text("who",style: TextStyle(fontSize: 12),
+  child: Text("Yangilanish",style: TextStyle(fontSize: 13,color: Colors.blue,fontWeight: FontWeight.bold),
       // child: Icon(Icons.account_circle_sharp, color: Colors.green,
     ),
 
