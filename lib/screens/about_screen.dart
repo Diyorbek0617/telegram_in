@@ -28,7 +28,7 @@ class _About_screenState extends State<About_screen> {
                       child: Center(
                         child: Text("Telegram ma`lumotlari dasturi haqida",
                           style: TextStyle(
-                            fontSize: 28,
+                            fontSize: 24,
                             //fontWeight:FontWeight.bold,
                             fontFamily: "Billabong",
                             color: Colors.black,

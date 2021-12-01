@@ -13,7 +13,7 @@ class _Telegram_asoschisiState extends State<Telegram_asoschisi> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.blue[300],
+      backgroundColor: Colors.white.withAlpha(90),
       appBar: AppBar(
         backgroundColor: Colors.green,
         elevation: 0,
@@ -26,6 +26,11 @@ class _Telegram_asoschisiState extends State<Telegram_asoschisi> {
 
       body: ListView(
         children: [
+          Container(
+            height: 200,
+            width: double.infinity,
+            child: Image.asset("assets/Durov2.jpg"),
+          ),
           Container(
             padding: EdgeInsets.only(top: 8,left: 3,right: 3,bottom: 2),
             child: Text("Pavel Durov 1984-yil 10-oktabr Rossiyaning Sankt-Peterburg shahrida tavallud topgan."

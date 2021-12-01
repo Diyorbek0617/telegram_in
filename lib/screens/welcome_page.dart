@@ -1,7 +1,9 @@
 
 import 'package:fab_circular_menu/fab_circular_menu.dart';
 import 'package:flutter/material.dart';
+import 'package:telegram_in/pages/telegram_asoschisi.dart';
 import 'package:telegram_in/pages/telegram_tarixi.dart';
+import 'package:telegram_in/pages/telegram_turlari.dart';
 import 'package:telegram_in/screens/home_screen.dart';
 import 'package:particles_flutter/particles_flutter.dart';
 import 'package:flutter/widgets.dart';
@@ -33,10 +35,7 @@ class _Welcome_pageState extends State<Welcome_page> with SingleTickerProviderSt
                     colors: [Colors.blue,Colors.teal,Colors.green,Colors.lightGreenAccent],
                   ),
                 ),
-                child:
-                    Stack(
-                      children: [
-                        CircularParticle(
+                child: CircularParticle(
                           width: w,
                           height: h,
                           awayRadius: w / 5,
@@ -60,8 +59,7 @@ class _Welcome_pageState extends State<Welcome_page> with SingleTickerProviderSt
                           hoverColor: Colors.black,
                           hoverRadius: 90,
                         ),
-                      ],
-                    ),
+
 
 
               ),
@@ -108,7 +106,7 @@ class _Welcome_pageState extends State<Welcome_page> with SingleTickerProviderSt
     ringColor: Colors.blue.withAlpha(40),
     ringDiameter: 500.0,
     ringWidth: 150.0,
-    fabSize: 55.0,
+    fabSize: 64.0,
     fabElevation: 8.0,
     fabIconBorder: CircleBorder(),
     // Also can use specific color based on wether
@@ -119,47 +117,149 @@ class _Welcome_pageState extends State<Welcome_page> with SingleTickerProviderSt
     fabColor: Colors.white,
     fabOpenIcon: Icon(Icons.menu, color: primaryColor),
     fabCloseIcon: Icon(Icons.close, color: primaryColor),
-    fabMargin: const EdgeInsets.all(16.0),
+    fabMargin: const EdgeInsets.only(left:16.0,right: 16,bottom:16.0),
     animationDuration: const Duration(milliseconds: 800),
     animationCurve: Curves.easeInOutCirc,
     onDisplayChange: (isOpen) {
 
     },
     children: <Widget>[
+
+      RawMaterialButton(
+        onPressed: () {
+        },
+
+        shape: CircleBorder(),
+        child:
+          FlatButton(
+            shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.circular(20.0),
+            ),
+            onPressed: (){
+              showDialog(
+                  context: context,
+                  builder: (BuildContext context){
+                    return AlertDialog(
+                      title: new Text("Ma`lumot"),
+                      content:  new Text("Yangilangan versiya mavjud emas!!!",style: TextStyle(fontSize: 12,color: Colors.black),),
+                      actions: <Widget>[
+                        new FlatButton(
+                          onPressed: (){
+                            Navigator.of(context).pop();
+                          },
+                          child: new Text("ok"),),
+                      ],
+                    ) ;
+                  }
+              );
+            },
+            color: Colors.indigoAccent.withAlpha(100),
+            child:Text("Updated",style: TextStyle(fontSize: 13,color: Colors.black87,fontWeight: FontWeight.bold),
+              // child: Icon(Icons.account_circle_sharp, color: Colors.green,
+            ),
+          ),
+        ),
+
+    RawMaterialButton(
+
+    onPressed: () {
+    },
+    shape: CircleBorder(),
+      child: FlatButton(
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(20.0),
+          ),
+          onPressed: (){
+            showDialog(
+                context: context,
+                builder: (BuildContext context){
+                  return AlertDialog(
+                    title: new Text("Ma`lumot"),
+                    content:  new Text("Yangiliklar sahifasi mavjud emas!!!",style: TextStyle(fontSize: 12,color: Colors.black),),
+                    actions: <Widget>[
+                      new FlatButton(
+                        onPressed: (){
+                          Navigator.of(context).pop();
+                        },
+                        child: new Text("ok"),),
+                    ],
+                  ) ;
+                }
+            );
+          },
+          color: Colors.tealAccent.withAlpha(100),
+          child:Text("News",style: TextStyle(fontSize: 13,color: Colors.white,fontWeight: FontWeight.bold),
+            // child: Icon(Icons.account_circle_sharp, color: Colors.green,
+          ),
+        ),
+      ),
+    RawMaterialButton(
+
+    onPressed: () {
+    },
+    shape: CircleBorder(),
+      child:  FlatButton(
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(20.0),
+          ),
+          onPressed: (){
+            showDialog(
+                context: context,
+                builder: (BuildContext context){
+                  return AlertDialog(
+                    title: new Text("Ma`lumot"),
+                    content:  new Text("Softwares sahifasi mavjud emas!!!",style: TextStyle(fontSize: 12,color: Colors.black),),
+                    actions: <Widget>[
+                      new FlatButton(
+                        onPressed: (){
+                          Navigator.of(context).pop();
+                        },
+                        child: new Text("ok"),),
+                    ],
+                  ) ;
+                }
+            );
+          },
+          color: Colors.white70,
+          child:Text("Softwares",style: TextStyle(fontSize: 12,color: Colors.blue,fontWeight: FontWeight.bold),
+            // child: Icon(Icons.account_circle_sharp, color: Colors.green,
+          ),
+        ),
+      ),
+
     RawMaterialButton(
     onPressed: () {
-
-    },
-
-    shape: CircleBorder(),
-    padding: const EdgeInsets.all(24.0),
-  child: Text("Yangilanish",style: TextStyle(fontSize: 13,color: Colors.blue,fontWeight: FontWeight.bold),
-      // child: Icon(Icons.account_circle_sharp, color: Colors.green,
-    ),
-
-    ),
-    RawMaterialButton(
-    onPressed: () {
-
     },
     shape: CircleBorder(),
-    padding: const EdgeInsets.all(24.0),
-    child: Icon(Icons.looks_two, color: Colors.white),
-    ),
-    RawMaterialButton(
-    onPressed: () {
-    },
-    shape: CircleBorder(),
-    padding: const EdgeInsets.all(24.0),
-    child: Icon(Icons.looks_3, color: Colors.white),
-    ),
-    RawMaterialButton(
-    onPressed: () {
-    },
-    shape: CircleBorder(),
-    padding: const EdgeInsets.all(24.0),
-    child: Icon(Icons.looks_4, color: Colors.white),
-    ),
+      child: FlatButton(
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(20.0),
+          ),
+          onPressed: (){
+            showDialog(
+            context: context,
+            builder: (BuildContext context){
+            return AlertDialog(
+            title: new Text("Ma`lumot"),
+            content:  new Text("Feedback sahifasi mavjud emas!!!",style: TextStyle(fontSize: 12,color: Colors.black),),
+            actions: <Widget>[
+            new FlatButton(
+            onPressed: (){
+            Navigator.of(context).pop();
+            },
+            child: new Text("ok"),),
+            ],
+            ) ;
+            }
+            );
+            },
+          color: Colors.white30,
+          child:Text("Feedback",style: TextStyle(fontSize: 13,color: Colors.red[300],fontWeight: FontWeight.bold),
+            // child: Icon(Icons.account_circle_sharp, color: Colors.green,
+          ),
+        ),
+      ),
+
      ],
     ),
     ),
