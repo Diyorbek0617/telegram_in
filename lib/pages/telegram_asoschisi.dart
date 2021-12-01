@@ -39,11 +39,24 @@ class _Telegram_asoschisiState extends State<Telegram_asoschisi> {
                 "fakultetini tamomlaytdi. Universitetda o'qish mobaynida harbiy fakultetni ham tamomlab"
                 "zahiradagi leytenant unvoniga erishadi,"
                 " U universitetni qizil diplomga tamomlab,o'sha yili Vkontakt ijtimoiy tarmog`ini yaratadi."
+                "2012-yil 19-noyabrda 'Mann,Ivanov va Ferber'nashiryoti Nikolay Kanonovaning'Kod Durova'deb nomlangan kitobni "
+                "chiqardi.Bu kitobda Pavel Durov intervyulardagi nutqlari asosida yozilgan."
+                "\n Pavel Durovning boylik haqida nutqlari\n"
+                "Mening hayot tarzimni koshonalarda, qo'sha-qo'sha mashinalarda va shaxsiy samalyotlarda"
+                "tasavvur qilgan odamlar qattiq yanglishadilar. Menda na samalyot na qimmat sport mashinalari yoki hashamatli saroy bor"
+                "Mening kundalik turmushim nihoyatda sodda.Ishga metroda qatnayman va samarali ishdan so'ng 18-20 metr-kvadrat maydondagi"
+                "ijara uyda umrguzaronlik qilish."
 
 
               ,style: TextStyle( color: Colors.black54,fontSize: 16),
               textAlign: TextAlign.justify,
             ),
+          ),
+          Container(
+            padding: EdgeInsets.only(top: 4,left: 3,right: 3,bottom: 2),
+            height: 230,
+            width: double.infinity,
+            child: Image.asset("assets/Durov4.png",fit: BoxFit.fill,),
           ),
         ],
       ),
