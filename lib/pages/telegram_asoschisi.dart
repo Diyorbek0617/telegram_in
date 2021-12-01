@@ -35,7 +35,10 @@ class _Telegram_asoschisiState extends State<Telegram_asoschisi> {
             padding: EdgeInsets.only(top: 8,left: 3,right: 3,bottom: 2),
             child: Text("Pavel Durov 1984-yil 10-oktabr Rossiyaning Sankt-Peterburg shahrida tavallud topgan."
                 "Pavel 11-yoshidan boshlab dasturlashga qiziqadi va o'rganishni boshlaydi."
-                ""
+                "2006-yilda Pavel  Sank Peterburg davlat universitetinining filiollogiya "
+                "fakultetini tamomlaytdi. Universitetda o'qish mobaynida harbiy fakultetni ham tamomlab"
+                "zahiradagi leytenant unvoniga erishadi,"
+                " U universitetni qizil diplomga tamomlab,o'sha yili Vkontakt ijtimoiy tarmog`ini yaratadi."
 
 
               ,style: TextStyle( color: Colors.black54,fontSize: 16),
