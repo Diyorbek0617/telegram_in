@@ -170,6 +170,20 @@ class _Pages_contents_screenState extends State<Pages_contents_screen> {
                 child: ListTile(
                   trailing: Icon(Icons.arrow_forward_ios),
                   leading: CircleAvatar(
+                    backgroundImage: AssetImage('assets/t_money2.jpg'),
+                    radius: 19,),
+                  title: Text('Telegram orqali pul ishlash',style:TextStyle(color: Colors.black,fontWeight: FontWeight.bold,
+                      fontSize: 15),
+                  ),
+                ),
+                elevation: 0,
+                color: Colors.white70,
+              ),
+              Card(
+                margin: EdgeInsets.only(top:5, left: 9,right: 9,bottom: 5),
+                child: ListTile(
+                  trailing: Icon(Icons.arrow_forward_ios),
+                  leading: CircleAvatar(
                     backgroundImage: AssetImage('assets/t_bot2.jpeg'),
                     radius: 19,
                   ),
@@ -195,14 +209,25 @@ class _Pages_contents_screenState extends State<Pages_contents_screen> {
                 elevation: 0,
                   color: Colors.white70,
               ),
+
               Card(
                 margin: EdgeInsets.only(top:5, left: 9,right: 9,bottom: 5),
                 child: ListTile(
                   trailing: Icon(Icons.arrow_forward_ios),
-                  leading: CircleAvatar(
-                    backgroundImage: AssetImage('assets/t_money2.jpg'),
-                    radius: 19,),
-                  title: Text('Telegram orqali pul ishlash',style:TextStyle(color: Colors.black,fontWeight: FontWeight.bold,
+                  leading: Icon(Icons.email),
+                  title: Text('Telegram email bot',style:TextStyle(color: Colors.black,fontWeight: FontWeight.bold,
+                      fontSize: 15),
+                  ),
+                ),
+                elevation: 0,
+                color: Colors.white70,
+              ),
+              Card(
+                margin: EdgeInsets.only(top:5, left: 9,right: 9,bottom: 5),
+                child: ListTile(
+                  trailing: Icon(Icons.arrow_forward_ios),
+                  leading: Icon(Icons.now_wallpaper),
+                  title: Text('Guggy Stickers bot',style:TextStyle(color: Colors.black,fontWeight: FontWeight.bold,
                       fontSize: 15),
                   ),
                 ),
@@ -214,31 +239,7 @@ class _Pages_contents_screenState extends State<Pages_contents_screen> {
                 child: ListTile(
                   trailing: Icon(Icons.arrow_forward_ios),
                   leading: Icon(Icons.import_contacts),
-                  title: Text('Telegram tarixi',style:TextStyle(color: Colors.black,fontWeight: FontWeight.bold,
-                      fontSize: 15),
-                  ),
-                ),
-                elevation: 0,
-                color: Colors.white70,
-              ),
-              Card(
-                margin: EdgeInsets.only(top:5, left: 9,right: 9,bottom: 5),
-                child: ListTile(
-                  trailing: Icon(Icons.arrow_forward_ios),
-                  leading: Icon(Icons.import_contacts),
-                  title: Text('Telegram tarixi',style:TextStyle(color: Colors.black,fontWeight: FontWeight.bold,
-                      fontSize: 15),
-                  ),
-                ),
-                elevation: 0,
-                color: Colors.white70,
-              ),
-              Card(
-                margin: EdgeInsets.only(top:5, left: 9,right: 9,bottom: 5),
-                child: ListTile(
-                  trailing: Icon(Icons.arrow_forward_ios),
-                  leading: Icon(Icons.import_contacts),
-                  title: Text('Telegram tarixi',style:TextStyle(color: Colors.black,fontWeight: FontWeight.bold,
+                  title: Text('Html Format bot',style:TextStyle(color: Colors.black,fontWeight: FontWeight.bold,
                       fontSize: 15),
                   ),
                 ),
@@ -250,7 +251,7 @@ class _Pages_contents_screenState extends State<Pages_contents_screen> {
                 child: ListTile(
                   trailing: Icon(Icons.arrow_forward_ios),
                   leading: Icon(Icons.import_contacts),
-                  title: Text('Telegram tarixi',style:TextStyle(color: Colors.black,fontWeight: FontWeight.bold,
+                  title: Text('Like bot',style:TextStyle(color: Colors.black,fontWeight: FontWeight.bold,
                       fontSize: 15),
                   ),
                 ),
@@ -262,7 +263,7 @@ class _Pages_contents_screenState extends State<Pages_contents_screen> {
                 child: ListTile(
                   trailing: Icon(Icons.arrow_forward_ios),
                   leading: Icon(Icons.import_contacts),
-                  title: Text('Telegram tarixi',style:TextStyle(color: Colors.black,fontWeight: FontWeight.bold,
+                  title: Text('Name to map',style:TextStyle(color: Colors.black,fontWeight: FontWeight.bold,
                       fontSize: 15),
                   ),
                 ),
@@ -274,7 +275,7 @@ class _Pages_contents_screenState extends State<Pages_contents_screen> {
                 child: ListTile(
                   trailing: Icon(Icons.arrow_forward_ios),
                   leading: Icon(Icons.import_contacts),
-                  title: Text('Telegram tarixi',style:TextStyle(color: Colors.black,fontWeight: FontWeight.bold,
+                  title: Text('Post bot',style:TextStyle(color: Colors.black,fontWeight: FontWeight.bold,
                       fontSize: 15),
                   ),
                 ),
@@ -286,7 +287,7 @@ class _Pages_contents_screenState extends State<Pages_contents_screen> {
                 child: ListTile(
                   trailing: Icon(Icons.arrow_forward_ios),
                   leading: Icon(Icons.import_contacts),
-                  title: Text('Telegram tarixi',style:TextStyle(color: Colors.black,fontWeight: FontWeight.bold,
+                  title: Text('Builder bot',style:TextStyle(color: Colors.black,fontWeight: FontWeight.bold,
                       fontSize: 15),
                   ),
                 ),
@@ -298,7 +299,7 @@ class _Pages_contents_screenState extends State<Pages_contents_screen> {
                 child: ListTile(
                   trailing: Icon(Icons.arrow_forward_ios),
                   leading: Icon(Icons.import_contacts),
-                  title: Text('Telegram tarixi',style:TextStyle(color: Colors.black,fontWeight: FontWeight.bold,
+                  title: Text('Vk music bot',style:TextStyle(color: Colors.black,fontWeight: FontWeight.bold,
                       fontSize: 15),
                   ),
                 ),
@@ -310,7 +311,7 @@ class _Pages_contents_screenState extends State<Pages_contents_screen> {
                 child: ListTile(
                   trailing: Icon(Icons.arrow_forward_ios),
                   leading: Icon(Icons.import_contacts),
-                  title: Text('Telegram tarixi',style:TextStyle(color: Colors.black,fontWeight: FontWeight.bold,
+                  title: Text('Vote bot',style:TextStyle(color: Colors.black,fontWeight: FontWeight.bold,
                       fontSize: 15),
                   ),
                 ),
@@ -322,13 +323,14 @@ class _Pages_contents_screenState extends State<Pages_contents_screen> {
                 child: ListTile(
                   trailing: Icon(Icons.arrow_forward_ios),
                   leading: Icon(Icons.contacts),
-                  title: Text('Sozlamalar',style:TextStyle(color: Colors.black,fontWeight: FontWeight.bold,
+                  title: Text('Apk downloader bot',style:TextStyle(color: Colors.black,fontWeight: FontWeight.bold,
                       fontSize: 15),
                   ),
                 ),
                 elevation: 0,
                 color: Colors.white70,
               ),
+
             ],
           ),
         ),
