@@ -56,7 +56,6 @@ class _About_screenState extends State<About_screen> {
                     ),
                     Container(
                       padding: EdgeInsets.only(left: 3,right: 3,),
-                      height: 210,
                       width: double.infinity,
                       color: Colors.black12,
                       child: Text(
