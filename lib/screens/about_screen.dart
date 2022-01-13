@@ -1,6 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
+
 import 'package:telegram_in/screens/home_screen.dart';
+import 'package:url_launcher/url_launcher.dart';
+
+const String _url = 'https://telegram.me/hack_revealing';
+
 
 class About_screen extends StatefulWidget {
   const About_screen({Key? key}) : super(key: key);
@@ -10,6 +15,11 @@ class About_screen extends StatefulWidget {
 }
 
 class _About_screenState extends State<About_screen> {
+
+  void _launchURL() async {
+    if (!await launch(_url)) throw 'Could not launch $_url';
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -89,17 +99,24 @@ class _About_screenState extends State<About_screen> {
                                 builder: (BuildContext context){
                                 return AlertDialog(
                                   title: new Text("Ma`lumot"),
-                                  content:  new Text("Telegram orqali bog`lanish hozircha mavjud emas!!!",style: TextStyle(fontSize: 12,color: Colors.black),),
+                                  content:  new Text("Bo'lanish uchun internet tarmog'iga ulangan bo'lishingiz kerak."
+                                      "Internet tarmog'ida bo'lsangiz bo'lanish tugmasini bosing. Aks holda chiqish tugmasini bosing.",style: TextStyle(fontSize: 12,color: Colors.black),),
                                   actions: <Widget>[
                                     new FlatButton(
                                       onPressed: (){
-                                      Navigator.of(context).pop();
+                                        _launchURL();
                                     },
-                                      child: new Text("ok"),),
+                                      child: new Text("bog'lanish"),),
+                                    new FlatButton(
+                                      onPressed: (){
+                                        Navigator.pop(context);
+                                      },
+                                      child: new Text("chiqish"),),
                                   ],
                                 ) ;
                                 }
                               );
+
                             },
                             child: Text("Bog`lanish",style: TextStyle(fontSize:19,color: Colors.red),),
                            color: Colors.green[700],

@@ -21,6 +21,7 @@ dependencies:
   page_transition:
   particles_flutter:
   fab_circular_menu:
+  url_launcher: ^6.0.18
 
 dev_dependencies:
   flutter_test:
