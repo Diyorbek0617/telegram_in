@@ -1,13 +1,12 @@
 import 'package:telegram_in/pages/telegram_asoschisi.dart';
 import 'package:flutter/material.dart';
 import 'package:telegram_in/pages/telegram_turlari.dart';
-import 'package:telegram_in/screens/home_screen.dart';
 import 'package:telegram_in/pages/telegram_tarixi.dart';
 
 
 class Pages_contents_screen extends StatefulWidget {
   const Pages_contents_screen({Key? key}) : super(key: key);
-  static final String id="pages_contents_screen";
+  static const String id="pages_contents_screen";
   @override
   _Pages_contents_screenState createState() => _Pages_contents_screenState();
 }
@@ -19,7 +18,7 @@ class _Pages_contents_screenState extends State<Pages_contents_screen> {
       backgroundColor: Colors.blueGrey,
       body:
       Container(
-          decoration: BoxDecoration(
+          decoration: const BoxDecoration(
             image: DecorationImage(
               image:AssetImage("assets/t7.png"),
              // fit:BoxFit.cover,
@@ -38,23 +37,23 @@ class _Pages_contents_screenState extends State<Pages_contents_screen> {
               //   ],
               // ),
               Card(
-                margin: EdgeInsets.only(top:8, left: 9,right: 9,bottom: 5),
+                margin: const EdgeInsets.only(top:8, left: 9,right: 9,bottom: 5),
                 child: ListTile(
                   onTap:()
                   {
                     Navigator.push(
                         context,
-                        MaterialPageRoute(builder: (context) => Telegram_tarixi())
+                        MaterialPageRoute(builder: (context) => const Telegram_tarixi())
                     );
                   },
-                 trailing: Icon(Icons.arrow_forward_ios),
+                 trailing: const Icon(Icons.arrow_forward_ios),
                   leading:
-                  CircleAvatar(
+                  const CircleAvatar(
                     backgroundImage: AssetImage('assets/t_h2.jpg'),
                     radius: 19,
 
                   ),
-                  title: Text('Telegram tarixi',style:TextStyle(color: Colors.black,fontWeight: FontWeight.bold,
+                  title: const Text('Telegram tarixi',style:TextStyle(color: Colors.black,fontWeight: FontWeight.bold,
                       fontSize: 15),),
                 ),
                 elevation: 0,
@@ -62,22 +61,22 @@ class _Pages_contents_screenState extends State<Pages_contents_screen> {
               ),
 
               Card(
-                margin: EdgeInsets.only(top:5, left: 9,right: 9,bottom: 5),
+                margin: const EdgeInsets.only(top:5, left: 9,right: 9,bottom: 5),
                 child:ListTile(
                 onTap:()
                 {
                   Navigator.push(
                       context,
-                      MaterialPageRoute(builder: (context) => Telegram_asoschisi())
+                      MaterialPageRoute(builder: (context) => const Telegram_asoschisi())
                   );
                 },
-                  trailing: Icon(Icons.arrow_forward_ios),
+                  trailing: const Icon(Icons.arrow_forward_ios),
 
-                leading: CircleAvatar(
+                leading: const CircleAvatar(
                   backgroundImage: AssetImage('assets/Durov.png'),
                   radius: 19,
                 ),
-                title: Text('Telegram asoschisi',style:TextStyle(color: Colors.black,fontWeight: FontWeight.bold,
+                title: const Text('Telegram asoschisi',style:TextStyle(color: Colors.black,fontWeight: FontWeight.bold,
                     fontSize: 15),
                 ),
               ),
@@ -86,14 +85,14 @@ class _Pages_contents_screenState extends State<Pages_contents_screen> {
               ),
 
               Card(
-                margin: EdgeInsets.only(top:5, left: 9,right: 9,bottom: 5),
+                margin: const EdgeInsets.only(top:5, left: 9,right: 9,bottom: 5),
                 child: ListTile(
-                  trailing: Icon(Icons.arrow_forward_ios),
-                  leading: CircleAvatar(
+                  trailing: const Icon(Icons.arrow_forward_ios),
+                  leading: const CircleAvatar(
                     backgroundImage: AssetImage('assets/t_d5.png'),
                     radius: 19,
                   ),
-                  title: Text('Telegram turlari',style:TextStyle(color: Colors.black,fontWeight: FontWeight.bold,
+                  title: const Text('Telegram turlari',style:TextStyle(color: Colors.black,fontWeight: FontWeight.bold,
                       fontSize: 15),
                   ),
                   onTap: (){
@@ -104,12 +103,12 @@ class _Pages_contents_screenState extends State<Pages_contents_screen> {
                 elevation: 0,
                 color: Colors.white70,
               ),
-              Card(
+              const Card(
                 margin: EdgeInsets.only(top:5, left: 9,right: 9,bottom: 5),
                 child: ListTile(
                   trailing: Icon(Icons.arrow_forward_ios),
                   leading: CircleAvatar(
-                    backgroundImage: AssetImage('assets/t_up2.png'),
+                    backgroundImage: AssetImage('assets/tel_update.webp'),
                     radius: 19,
                   ),
                   title: Text('Telegram versiyalari',style:TextStyle(color: Colors.black,fontWeight: FontWeight.bold,
@@ -119,7 +118,7 @@ class _Pages_contents_screenState extends State<Pages_contents_screen> {
                 elevation: 0,
                 color: Colors.white70,
               ),
-              Card(
+              const Card(
                 margin: EdgeInsets.only(top:5, left: 9,right: 9,bottom: 5),
                 child: ListTile(
                   trailing: Icon(Icons.arrow_forward_ios),
@@ -134,7 +133,7 @@ class _Pages_contents_screenState extends State<Pages_contents_screen> {
                 elevation: 0,
                 color: Colors.white70,
               ),
-              Card(
+              const Card(
 
                 margin: EdgeInsets.only(top:5, left: 9,right: 9,bottom: 5),
                 child: ListTile(
@@ -150,7 +149,7 @@ class _Pages_contents_screenState extends State<Pages_contents_screen> {
                 elevation: 0,
                 color: Colors.white70,
               ),
-              Card(
+              const Card(
                 margin: EdgeInsets.only(top:5, left: 9,right: 9,bottom: 5),
                 child: ListTile(
                   trailing: Icon(Icons.arrow_forward_ios),
@@ -165,7 +164,7 @@ class _Pages_contents_screenState extends State<Pages_contents_screen> {
                 elevation: 0,
                 color: Colors.white70,
               ),
-              Card(
+              const Card(
                 margin: EdgeInsets.only(top:5, left: 9,right: 9,bottom: 5),
                 child: ListTile(
                   trailing: Icon(Icons.arrow_forward_ios),
@@ -179,7 +178,7 @@ class _Pages_contents_screenState extends State<Pages_contents_screen> {
                 elevation: 0,
                 color: Colors.white70,
               ),
-              Card(
+              const Card(
                 margin: EdgeInsets.only(top:5, left: 9,right: 9,bottom: 5),
                 child: ListTile(
                   trailing: Icon(Icons.arrow_forward_ios),
@@ -194,7 +193,7 @@ class _Pages_contents_screenState extends State<Pages_contents_screen> {
                 elevation: 0,
                 color: Colors.white70,
               ),
-              Card(
+              const Card(
                 margin: EdgeInsets.only(top:5, left: 9,right: 9,bottom: 5),
                 child: ListTile(
                   trailing: Icon(Icons.arrow_forward_ios),
@@ -210,7 +209,7 @@ class _Pages_contents_screenState extends State<Pages_contents_screen> {
                   color: Colors.white70,
               ),
 
-              Card(
+              const Card(
                 margin: EdgeInsets.only(top:5, left: 9,right: 9,bottom: 5),
                 child: ListTile(
                   trailing: Icon(Icons.arrow_forward_ios),
@@ -222,7 +221,7 @@ class _Pages_contents_screenState extends State<Pages_contents_screen> {
                 elevation: 0,
                 color: Colors.white70,
               ),
-              Card(
+              const Card(
                 margin: EdgeInsets.only(top:5, left: 9,right: 9,bottom: 5),
                 child: ListTile(
                   trailing: Icon(Icons.arrow_forward_ios),
@@ -234,7 +233,7 @@ class _Pages_contents_screenState extends State<Pages_contents_screen> {
                 elevation: 0,
                 color: Colors.white70,
               ),
-              Card(
+              const Card(
                 margin: EdgeInsets.only(top:5, left: 9,right: 9,bottom: 5),
                 child: ListTile(
                   trailing: Icon(Icons.arrow_forward_ios),
@@ -246,7 +245,7 @@ class _Pages_contents_screenState extends State<Pages_contents_screen> {
                 elevation: 0,
                   color: Colors.white70,
               ),
-              Card(
+              const Card(
                 margin: EdgeInsets.only(top:5, left: 9,right: 9,bottom: 5),
                 child: ListTile(
                   trailing: Icon(Icons.arrow_forward_ios),
@@ -258,7 +257,7 @@ class _Pages_contents_screenState extends State<Pages_contents_screen> {
                 elevation: 0,
                 color: Colors.white70,
               ),
-              Card(
+              const Card(
                 margin: EdgeInsets.only(top:5, left: 9,right: 9,bottom: 5),
                 child: ListTile(
                   trailing: Icon(Icons.arrow_forward_ios),
@@ -270,7 +269,7 @@ class _Pages_contents_screenState extends State<Pages_contents_screen> {
                 elevation: 0,
                 color: Colors.white70,
               ),
-              Card(
+              const Card(
                 margin: EdgeInsets.only(top:5, left: 9,right: 9,bottom: 5),
                 child: ListTile(
                   trailing: Icon(Icons.arrow_forward_ios),
@@ -282,7 +281,7 @@ class _Pages_contents_screenState extends State<Pages_contents_screen> {
                 elevation: 0,
                   color: Colors.white70,
               ),
-              Card(
+              const Card(
                 margin: EdgeInsets.only(top:5, left: 9,right: 9,bottom: 5),
                 child: ListTile(
                   trailing: Icon(Icons.arrow_forward_ios),
@@ -294,7 +293,7 @@ class _Pages_contents_screenState extends State<Pages_contents_screen> {
                 elevation: 0,
                 color: Colors.white70,
               ),
-              Card(
+              const Card(
                 margin: EdgeInsets.only(top:5, left: 9,right: 9,bottom: 5),
                 child: ListTile(
                   trailing: Icon(Icons.arrow_forward_ios),
@@ -306,7 +305,7 @@ class _Pages_contents_screenState extends State<Pages_contents_screen> {
                 elevation: 0,
                 color: Colors.white70,
               ),
-              Card(
+              const Card(
                 margin: EdgeInsets.only(top:5, left: 9,right: 9,bottom: 5),
                 child: ListTile(
                   trailing: Icon(Icons.arrow_forward_ios),
@@ -318,7 +317,7 @@ class _Pages_contents_screenState extends State<Pages_contents_screen> {
                 elevation: 0,
                 color: Colors.white70,
               ),
-              Card(
+              const Card(
                 margin: EdgeInsets.only(top:5, left: 9,right: 9,bottom: 5),
                 child: ListTile(
                   trailing: Icon(Icons.arrow_forward_ios),

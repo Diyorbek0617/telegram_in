@@ -47,3 +47,6 @@ flutter:
     - family: Billabong
       fonts:
         - asset: assets/fonts/Billabong.ttf
+    - family: Nottingsam_Demo
+      fonts:
+        - asset: assets/fonts/Nottingsam_Demo.ttf

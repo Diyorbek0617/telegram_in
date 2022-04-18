@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:telegram_in/pages/text.dart';
 class Telegram_turlari extends StatefulWidget {
   const Telegram_turlari({Key? key}) : super(key: key);
-  static final String id="telegram_turlari";
+  static const String id="telegram_turlari";
 
   @override
   _Telegram_turlariState createState() => _Telegram_turlariState();
@@ -16,13 +17,11 @@ class _Telegram_turlariState extends State<Telegram_turlari> {
         centerTitle: true,
         elevation: 0,
         backgroundColor: Colors.blueAccent[600],
-        title: Text("Telegram turlari",style: TextStyle(color: Colors.black,fontSize: 18,),),
+        title: const Text("Telegram turlari",style: TextStyle(color: Colors.white),),
       ),
       body: ListView(
-        children: [
-          Container(
-            child: Text("qwert"),
-          ),
+        children:  [
+          Text(matnlar().telegram_turlari(),style: TextStyle(color: Colors.blueGrey),textAlign: TextAlign.justify,),
         ],
       ),
     );
