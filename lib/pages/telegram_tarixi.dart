@@ -35,7 +35,7 @@ class _Telegram_tarixiState extends State<Telegram_tarixi> {
                ),
                Container(
                  padding: const EdgeInsets.only(top: 8,left: 3,right: 3,bottom: 2),
-                 child: Text(matnlar().telegram_tarixi(),style: TextStyle( color: Colors.black54,fontSize: 16),
+                 child: Text(matnlar().telegram_tarixi(),style: const TextStyle( color: Colors.black54,fontSize: 16),
                    textAlign: TextAlign.justify,
 
                  ),

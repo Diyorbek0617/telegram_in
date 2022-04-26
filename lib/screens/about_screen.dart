@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 import 'package:url_launcher/url_launcher.dart';
 
-const String _url = 'https://telegram.me/hack_revealing';
+const String _url = 'https://telegram.me/spenser_mobile_developer';
 
 
 class About_screen extends StatefulWidget {

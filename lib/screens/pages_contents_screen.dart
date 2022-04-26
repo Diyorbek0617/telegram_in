@@ -1,7 +1,11 @@
+import 'package:telegram_in/pages/aktiv_kanallar.dart';
+import 'package:telegram_in/pages/telegram_alternative.dart';
 import 'package:telegram_in/pages/telegram_asoschisi.dart';
 import 'package:flutter/material.dart';
+import 'package:telegram_in/pages/telegram_kanal.dart';
 import 'package:telegram_in/pages/telegram_turlari.dart';
 import 'package:telegram_in/pages/telegram_tarixi.dart';
+import 'package:telegram_in/pages/telegram_versiyalari.dart';
 
 
 class Pages_contents_screen extends StatefulWidget {
@@ -103,61 +107,72 @@ class _Pages_contents_screenState extends State<Pages_contents_screen> {
                 elevation: 0,
                 color: Colors.white70,
               ),
-              const Card(
-                margin: EdgeInsets.only(top:5, left: 9,right: 9,bottom: 5),
+               Card(
+                margin: const EdgeInsets.only(top:5, left: 9,right: 9,bottom: 5),
                 child: ListTile(
-                  trailing: Icon(Icons.arrow_forward_ios),
-                  leading: CircleAvatar(
+                  onTap: (){
+                    Navigator.pushNamed(context, Telegram_versiyalari.id);
+                  },
+                  trailing:const Icon(Icons.arrow_forward_ios),
+                  leading:const  CircleAvatar(
                     backgroundImage: AssetImage('assets/tel_update.webp'),
                     radius: 19,
                   ),
-                  title: Text('Telegram versiyalari',style:TextStyle(color: Colors.black,fontWeight: FontWeight.bold,
+                  title:const Text('Telegram versiyalari',style:TextStyle(color: Colors.black,fontWeight: FontWeight.bold,
                       fontSize: 15),
                   ),
                 ),
                 elevation: 0,
                 color: Colors.white70,
               ),
-              const Card(
-                margin: EdgeInsets.only(top:5, left: 9,right: 9,bottom: 5),
+               Card(
+                margin:const EdgeInsets.only(top:5, left: 9,right: 9,bottom: 5),
                 child: ListTile(
-                  trailing: Icon(Icons.arrow_forward_ios),
-                  leading: CircleAvatar(
+                  onTap: (){
+                    Navigator.pushNamed(context, Telegram_alternative.id);
+                  },
+                  trailing: const Icon(Icons.arrow_forward_ios),
+                  leading:const CircleAvatar(
                     backgroundImage: AssetImage('assets/t_alter3.png'),
                     radius: 19,
                   ),
-                  title: Text('Telegram alternatives',style:TextStyle(color: Colors.black,fontWeight: FontWeight.bold,
+                  title: const Text('Telegram alternatives',style:TextStyle(color: Colors.black,fontWeight: FontWeight.bold,
                       fontSize: 15),
                   ),
                 ),
                 elevation: 0,
                 color: Colors.white70,
               ),
-              const Card(
-
-                margin: EdgeInsets.only(top:5, left: 9,right: 9,bottom: 5),
+               Card(
+                margin: const EdgeInsets.only(top:5, left: 9,right: 9,bottom: 5),
                 child: ListTile(
-                  trailing: Icon(Icons.arrow_forward_ios),
-                  leading: CircleAvatar(
+                  onTap: (){
+                    Navigator.pushNamed(context, Telegram_kanal.id);
+                  },
+                  trailing:const Icon(Icons.arrow_forward_ios),
+                  leading:const CircleAvatar(
                     backgroundImage: AssetImage('assets/channel3.jpg'),
                     radius: 19,
                   ),
-                  title: Text('Telegram kanal',style:TextStyle(color: Colors.black,fontWeight: FontWeight.bold,
+                  title:const Text('Telegram kanal',style:TextStyle(color: Colors.black,fontWeight: FontWeight.bold,
                       fontSize: 15),
                   ),
                 ),
                 elevation: 0,
                 color: Colors.white70,
               ),
-              const Card(
-                margin: EdgeInsets.only(top:5, left: 9,right: 9,bottom: 5),
+               Card(
+                margin:const EdgeInsets.only(top:5, left: 9,right: 9,bottom: 5),
                 child: ListTile(
-                  trailing: Icon(Icons.arrow_forward_ios),
-                  leading: CircleAvatar(
+                  onTap: (){
+                    Navigator.pushNamed(context, Aktiv_kanallar.id);
+                  },
+                  trailing:const Icon(Icons.arrow_forward_ios),
+                  leading: const CircleAvatar(
                     backgroundImage: AssetImage('assets/t_ch2.png'),
                     radius: 19,
                   ),
-                  title: Text('Aktiv kanallar',style:TextStyle(color: Colors.black,fontWeight: FontWeight.bold,
+                  title: const Text('Aktiv kanallar',style:TextStyle(color: Colors.black,fontWeight: FontWeight.bold,
                       fontSize: 15),
                   ),
                 ),
