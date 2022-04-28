@@ -1,8 +1,13 @@
 import 'package:telegram_in/pages/aktiv_kanallar.dart';
+import 'package:telegram_in/pages/guggy_va_guggy_stickers_bot.dart';
+import 'package:telegram_in/pages/mukammal_bot_yaratish.dart';
 import 'package:telegram_in/pages/telegram_alternative.dart';
 import 'package:telegram_in/pages/telegram_asoschisi.dart';
 import 'package:flutter/material.dart';
+import 'package:telegram_in/pages/telegram_bot.dart';
+import 'package:telegram_in/pages/telegram_email_bot.dart';
 import 'package:telegram_in/pages/telegram_kanal.dart';
+import 'package:telegram_in/pages/telegram_orqali_pul_ishlash.dart';
 import 'package:telegram_in/pages/telegram_turlari.dart';
 import 'package:telegram_in/pages/telegram_tarixi.dart';
 import 'package:telegram_in/pages/telegram_versiyalari.dart';
@@ -179,44 +184,53 @@ class _Pages_contents_screenState extends State<Pages_contents_screen> {
                 elevation: 0,
                 color: Colors.white70,
               ),
-              const Card(
-                margin: EdgeInsets.only(top:5, left: 9,right: 9,bottom: 5),
+               Card(
+                margin: const EdgeInsets.only(top:5, left: 9,right: 9,bottom: 5),
                 child: ListTile(
-                  trailing: Icon(Icons.arrow_forward_ios),
-                  leading: CircleAvatar(
+                  onTap: (){
+                    Navigator.pushNamed(context, Telegram_orqali_pul_ishlash.id);
+                  },
+                  trailing:const Icon(Icons.arrow_forward_ios),
+                  leading: const CircleAvatar(
                     backgroundImage: AssetImage('assets/t_money2.jpg'),
                     radius: 19,),
-                  title: Text('Telegram orqali pul ishlash',style:TextStyle(color: Colors.black,fontWeight: FontWeight.bold,
+                  title:const Text('Telegram orqali pul ishlash',style:TextStyle(color: Colors.black,fontWeight: FontWeight.bold,
                       fontSize: 15),
                   ),
                 ),
                 elevation: 0,
                 color: Colors.white70,
               ),
-              const Card(
-                margin: EdgeInsets.only(top:5, left: 9,right: 9,bottom: 5),
+               Card(
+                margin:const EdgeInsets.only(top:5, left: 9,right: 9,bottom: 5),
                 child: ListTile(
-                  trailing: Icon(Icons.arrow_forward_ios),
-                  leading: CircleAvatar(
+                  onTap: (){
+                    Navigator.pushNamed(context, Telegram_bot.id);
+                  },
+                  trailing:const Icon(Icons.arrow_forward_ios),
+                  leading:const CircleAvatar(
                     backgroundImage: AssetImage('assets/t_bot2.jpeg'),
                     radius: 19,
                   ),
-                  title: Text('Telegram bot',style:TextStyle(color: Colors.black,fontWeight: FontWeight.bold,
+                  title: const Text('Telegram bot',style:TextStyle(color: Colors.black,fontWeight: FontWeight.bold,
                       fontSize: 15),
                   ),
                 ),
                 elevation: 0,
                 color: Colors.white70,
               ),
-              const Card(
-                margin: EdgeInsets.only(top:5, left: 9,right: 9,bottom: 5),
+               Card(
+                margin: const EdgeInsets.only(top:5, left: 9,right: 9,bottom: 5),
                 child: ListTile(
-                  trailing: Icon(Icons.arrow_forward_ios),
-                  leading: CircleAvatar(
+                  onTap: (){
+                    Navigator.pushNamed(context, Mukammal_bot_yaratish.id);
+                  },
+                  trailing:const Icon(Icons.arrow_forward_ios),
+                  leading:const CircleAvatar(
                     backgroundImage: AssetImage('assets/superbot.jpg'),
                     radius: 19,
                   ),
-                  title: Text('Mukammal bot yaratish',style:TextStyle(color: Colors.black,fontWeight: FontWeight.bold,
+                  title:const Text('Mukammal bot yaratish',style:TextStyle(color: Colors.black,fontWeight: FontWeight.bold,
                       fontSize: 15),
                   ),
                 ),
@@ -224,24 +238,30 @@ class _Pages_contents_screenState extends State<Pages_contents_screen> {
                   color: Colors.white70,
               ),
 
-              const Card(
-                margin: EdgeInsets.only(top:5, left: 9,right: 9,bottom: 5),
+               Card(
+                margin: const EdgeInsets.only(top:5, left: 9,right: 9,bottom: 5),
                 child: ListTile(
-                  trailing: Icon(Icons.arrow_forward_ios),
-                  leading: Icon(Icons.email),
-                  title: Text('Telegram email bot',style:TextStyle(color: Colors.black,fontWeight: FontWeight.bold,
+                  onTap: (){
+                    Navigator.pushNamed(context, Telegram_email_bot.id);
+                  },
+                  trailing:const Icon(Icons.arrow_forward_ios),
+                  leading: const Icon(Icons.email),
+                  title:const Text('Telegram email bot',style:TextStyle(color: Colors.black,fontWeight: FontWeight.bold,
                       fontSize: 15),
                   ),
                 ),
                 elevation: 0,
                 color: Colors.white70,
               ),
-              const Card(
-                margin: EdgeInsets.only(top:5, left: 9,right: 9,bottom: 5),
+               Card(
+                margin:const EdgeInsets.only(top:5, left: 9,right: 9,bottom: 5),
                 child: ListTile(
-                  trailing: Icon(Icons.arrow_forward_ios),
-                  leading: Icon(Icons.now_wallpaper),
-                  title: Text('Guggy Stickers bot',style:TextStyle(color: Colors.black,fontWeight: FontWeight.bold,
+                  onTap: (){
+                    Navigator.pushNamed(context, Guggy_va_guggy_stickers_bot.id);
+                  },
+                  trailing: const Icon(Icons.arrow_forward_ios),
+                  leading:const Icon(Icons.now_wallpaper),
+                  title: const Text('Guggy va Guggy Stickers bot',style:TextStyle(color: Colors.black,fontWeight: FontWeight.bold,
                       fontSize: 15),
                   ),
                 ),

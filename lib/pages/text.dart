@@ -262,9 +262,87 @@ class matnlar{
      String text=
          "Telegramdagi O'zbek kanallari o'rtasida birinchi o'rinda turuvchi Kun.uz saytining telegram kanali hisoblanadi,qachonki 2022-yil hisobiga ko'ra."
          "kun.uz kanali 2015 yilning 20 dekabrda ochilgan. ushbu kanal eng so'ngi yangiliklarni birinchilardan bo'lib habardor bo'lasiz, Kun.uz asosiy "
-         "kanali kunlik hisobida ko'ra 30dan ortiq  postlar joylanadi.";
+         "kanali kunlik hisobiga ko'ra 30dan ortiq  postlar joylanadi.kun.uz boshqa faol kanallardan afzalligi shundaki, O'zbekistonda bo'layotgan o'zgrishlarni,yangiliklarni "
+         "tezkorlik bilan habar berishidir.\n"
+         "Yana bir aktiv kanal bu daryo rasmiy kanalidir. Daryo kanali 2015-yil 28-avgustda ochilgan, bu kanal etibor qaratgan yo'nallishi bu yangiliklardan habardor qilish."
+         "Daryo rasmiy kanali foaliyati 2021-yilgacha eng yaxshi darajada edi, 2021-yil davomidagi obunachilar soni 800 mingdan ziyodroq edi, lekin  2022-yilga kelib obunachilar "
+         "soni 550 ming obunachiga tushib qoldi.";
      return text;
   }
+  telegram_orqali_pul_ishlash(){
+     String text=
+         "Telegram orqali pul ishlashning yo'llari ko'p va bu oson ish emas.Men ikki yo'li haqida ma'lumot beraman."
+         "Telegram kanal orqali pul topish uchun , birinchi navbatda kanal ochishingiz va uni rivojlantirishingiz kerak."
+         "Kanal ochish jarayonida kanal nomini yaxshilab o'ylashingiz kerak va keyin nom berishingiz kerak. chunki kanalingiz nomi orqali kanalda qanday ma'lumotlar"
+         " borligini bilish mumkin.Telgram foydalanuvchilar ehtiyojalridan kelib chiqgan holda kanal yaratganingiz ma'qul hisoblanadi."
+         "Har bir kanalga joylangan postlar foydalanuvchilarni qiziqtirishi va bir biri ulashishi sabab bo'lishi kerak. Tayyorlagan postingiz ostida albatta kanal "
+         "manzili bo'lishi kerak.Bu kanalga kiruvchilar uchun qulaylik olib keladi. Deylik kanalingiz rivojlandi va 30 ming yoki 40 ming obunachiga yetganda sizga "
+         "reklama masalasi bo'yicha murojaatlar kelib tushadi, albatta siz o'z telegram manziligizni yoki telefon raqamingizni telegram haqida bo'limiga"
+         " yozib qo'ygan bo'lsangiz. Reklama chiqarish usuli oddiy, misol kanal obunachisi 30 mingta bo'lsa 30ming so'm belgilashingiz mumkin. Kanal foaligiga va foydalunchilar"
+         " ko'pligiga qarab reklama joylash hizmati o'zgarishi mumkin.kanalga post joylashda qilishingiz  mumkin,bo'lmagan ishlar haqida ma'lumot bersam, kanalingizga boshqa bir kanallardan"
+         " postlarni nusxalab joylashingiz, bu sizga foydadan ko'ra ziyon keltiradi. kanalingizga eng ko'pi bilan kuniga 3 yoki 4  reklama joylashingiz kerak, aks holda "
+         "kanalingizning sifati tushib ketadi va obunachilaringiz kamaya boshlaydi.\n"
+         "Botlar orqali pul ishlash , kanal orqali topishdan tubdan farq qiladi.Bot orqali topilgan pullar elektron pul ya'ni Webmoney, Qiwi,Yandex Dengi"
+         " kabi elektron hamyonlarga tushurib olinadi.Siz quyidagi 3 xil usul orqali botlardan pul ishlay olasiz."
+         "1.Investor botlarga pul tikib pul ishlash,o'z nomi bilan aniqki siz botga pul tikkan holada pul ishlaysiz.Elektron hamyon orqali botga pul ashlaysiz va bot sizga "
+         "kunlik 5% yoki undan ko'proq qiymatda pul to'lay boshlaydi.2.Vazifa bajarib pul ishash. Bu ish samarali va xavfsiz hisoblanib, siz reklamada taqdim etilayotgan "
+         "kanallarga a'zo bo'lib pul ishlaysiz.kanallarga a'zo bo'lasiz va sizga pul darxol tushirilib beriladi.Tekshirilish bo'limida sizga qancha muddat kanalda a'zo "
+         "bo'lgan holatda turishingiz haqida ma'lumot beriladi va shu vaqt ichida kanaldan chiqib ketmasligingiz kerak bo'ladi. Sizda savol tug'ilishi mumkin,bundan "
+         "botga qanday foyda , albatta foydali tomoni bor.Botda sizga a'zo bo'lishingiz kerak bo'lgan kanallar ,adminlari botga pul to'lashadi."
+         "3.Kazino botlar , Ushbu botlarda siz toshlarni necha son tushishini tahmin qilib pul tikasiz.Toshlar GIF suratlar orqli berib boriladi.Bot siz uchun dastlab "
+         "1 dollar qiymatidagi bonus beradi.Siz botda kazino o'yinlaridan pul yutib olaganingizdan so'ng, siz u elektron pullarni hamyonlar Webmoney,Qiwi,Yandex Dengi,Perfect Money,Bitcoin "
+         "orqali o'tkazib olishingiz mumkin.";
+     return text;
+  }
+  telegram_bot(){
+     String text=
+         "Hozirgi kunda telegram tarmog'ida tezlik bilan rivojlanayotgan va foydalanuvchilarga qulaylik yaratyotgan telegram bot yo'nallishi."
+         "Aslida bot nima va qanday maqsadlarda foydalaniladi.Ushbu savollar uchun yetarlicha malumot beramiz."
+         "Statistikaga qaraganda telegramning hamma foydalnuvchilariga nisbatan telegram botlar ko'p ekan.bot nima? "
+         "Maxsus API yordamida uchinchi tomon ishlab chiquvchilari 'botlar', dasturlar tomonidan boshqariladigan maxsus hisoblarni yaratishi mumkin. Odatiy botlar"
+         " shaxsiy va guruh chatlarida ma'lum buyruqlarga javob beradi, ular shuningdek, Internetda qidirishlari yoki boshqa vazifalarni bajarishlari mumkin, o'yin-kulgi"
+         " yoki biznes maqsadlarida foydalaniladi.Telegram bot yangiliklarini birb boruvchi rasmiy kanal @botnews. ushbu kanal 2017-yilda faoliyatini boshlagan, kanalda "
+         "rasmiy habarlar joylanadi."
+         "2015 yil sentyabr oyida Pavel Durov botlarda monetizatsiya va reklama qilish imkoniyatlari yaqinda paydo bo'lishini e'lon qildi."
+    "2017-yilning 18-mayida botlar uchun to‘lov API’si joriy etildi. Foydalanuvchilar ushbu funksiyani sinab ko‘rishlari uchun Telegram jamoasi Time Machine sotib olishni taklif"
+         " qiluvchi test bot yaratdi (foydalanuvchilardan pul undirilmadi).2016-yilning noyabr oyida messenjer uchun botlarni yaratish bo‘yicha botpriz tanlovining birinchi"
+         " natijalari sarhisob qilindi. Ishlab chiquvchilar jami 200 000 dollar olishdi.2019-yil mart oyida Ijtimoiy tarmoqlar va messenjerlarning Professional foydalanuvchilari"
+         " assotsiatsiyasi (APPSIM) Pavel Durovni ishlab chiquvchilarga 800 ming dollar to‘lamaganlikda aybladi.";
+     return text;
+  }
+   mukammal_bot_yaratish(){
+     String text=
+         "Mukammal bot yaratish uchun quyidagich ketma ketlikda ma'lumot berib boraman. 1. telegramning qidiruv tizimidan BotFather(@botfather) izlab,unga kiramiz."
+         "xabar yozish joyidan buruqlar bo'limiga o'tamiz, '/' buyrug'ini bosing va '/newbot'ni tanlaymiz,keyin sizga bot nomini kiriting degan xabar keladi,ixtiyoriy nom kiriting va"
+         " kiritgan nomdan so'ng bot sozini qo'shib qo'ying, chunki bot yaratish qoidasi shunday.2.Telegram bosh sahifasiga o'tib qidiruv tizimidan Manybot(@manybot) ni izlab , unga kiring"
+         " boshqaruv bo'limidan CREATE A NEW BOT ni tanlaymiz, so'ng sizga botfather dan yaratgan botingizni API kodni so'raydi.Siz botfatherga kirasiz,boshqaruv bo'limidan mening botlarim"
+         " tugmasi bosib, botingizni tanlaysiz va token degan qismidan API kodini nusxalab olasiz,keyin manybot ga qaytib nusxalab olgan kodingizni joylaysiz,Siz skip(o'tkazib yuborish) degan"
+         " tugmani tanlaysiz va botingiz tayyor.Telegram bosh sahifasiga o'tib qidiruv tizimidan Botingizni nomini yozasiz , so'ng botingizga kirib, boshqaruv bo'limidan CUSTOM COMMANDS ni tanlysiz"
+         " Create Command tugmasi chiqadi, shuni tanlaysiz, endi botingizni boshqarish uchun umumiy bo'lgan so'z kiritasiz, masalan : /rasmlar  , nom berganingizdan so'ng sizga fayl yuborishingiz"
+         "haqida xabar keladi, ixtiyoriy bo'lgan  fayllarni joylaysiz,so'ng save(saqlash) tugmasini tanlaysiz,boshqaruv buyruqlari yaratildi, botni boshqaruv bo'limidan +ADD MENU ITEM tugmasini "
+         "tanlaysiz,keyin oldinroq yaratilgan boshqaruv buyruqlari asosiy bo'limda qanday nomda ko'rinishi haqida habar keladi , so'ng ixtiyoriy nom kiritasiz va Manybotda qilingan mukammal bot tayyor"
+         " Endi sizning botingizda bir boshqaruv tugmasi mavjud, Siz ixtiyoriy tarzda boshqaruv "
+         " tugmalarini yaratishingiz mumkin." ;
+     return text;
+   }
+   telegram_email_bot(){
+     String text=
+         "Turli xil internet saytlarida ro'yxatdan o'tish uchun haqiqiy  e-mail pochta manzilingizni kiritishdan va pochtangizga spamli xabarlar kelishi joningizga tegdimi?\n"
+         "Endi tezkor qulay va bepul pochta sizning Telegram messenjeringizda!. Bu sizga taqdim etayotgan botimiz emailni telegramdan ochishingiz va shu yerdan turib habarlarni yuborishingiz"
+         " va qabul qilishingiz imkonini beradi. Telegram qidiruv tizimidan Telegram Email(@etlgr_bot) izlang va unga kiring , keyin boshqaruv bo'limidan /start  buyrug'ini bosasiz, so'ng /register ni bosasiz."
+         "Bot emailga nom berish haqida habar keladi,ixtiyoriy nom berasiz , so'ng tasdiqlangani haqida xabar keladi va Email pochta tayyor.Kimgadir xabar yozmoqchi bo'lsangiz, /send buyrug'idan"
+         " foydalaning.";
+     return text;
+   }
+   guggy_va_guggy_stickers_bot(){
+     String text=
+         "Guggy botning vazifasi siz yozgan har qanday yozuvni gif formatidagi yana animatsiya suratga siz yozgan yozuvni kiritib ,qayta tahrirlab sizga taqdim etadi.Siz uni do'stlar bilan baham "
+         "ko'rishingiz va xotiraga yuklab olishingiz mumkin.Telegram qidiruv tizimidan Guggy(@guggybot) orqali topishingiz mumkin.\n"
+         "Guggy sticker bot ham oldingi botga o'xshash va albatta ikkala bot ham bir inson tomonidan yaratilgan.Bu bot orqali yozgan yozuvingizni sizga stiker ko'rinishida qayta yuboradi.Agar"
+         " yozgan yozuchingizga stiker to'g'ri kelmasa sizga taqdim etilgan sticker pastidagi chap tomondagi aylana smaylni bosgan xolda boshqasini tanlash imkoniga egasiz.Ushbu botni Telegram qidiruv"
+         "tizimidan Guggy stickers bot orqali topishingiz mumkin.";
+     return text;
+   }
   dastur_haqida(){
      String text="Dastur telegram ijtimoiy tarmog`ida faol bo'lish maqsadida yaratilgan."
          "Dasturdagi ma`lumotlardan ijtimoiy maqsadlarda foydalanilganda, Dastlabki manbasi bilan ko'rsatilisin."
